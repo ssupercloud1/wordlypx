@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import SpeechForm from './SpeechForm';
+import DefineForm from './DefineForm';
+import QuizzesForm from './QuizzesForm';
+import AboutUs from './AboutUs';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <a href="#" target="_blank" rel="noreferrer">Home</a>
+      </nav>
+      <div className="ribbon">
+        <h1>WordlyPX</h1>
+        <p>Helping you stand out confidently in English</p>
+      </div>
+      <SpeechForm />
+      <DefineForm />
+      <QuizzesForm />
+	  <AboutUs />
+      <footer>© 2023 WordlyPX. All Rights Reserved</footer>
     </div>
   );
 }

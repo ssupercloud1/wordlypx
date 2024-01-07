@@ -1,38 +1,99 @@
 .App {
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  border: 3px solid gray
+}
+
+nav {
+  background-color: white;
+  color: #000435;
+  padding: 10px;
+  borderRadius: 8px;
+  border: 1px solid navy;
+  text-align: right;
+}
+
+nav a {
+  color: #000435;
+  text-decoration: none;
+}
+
+.ribbon {
+  background-color: #000435;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+.ribbon h1 {
+  margin: 0;
+}
+
+.ribbon p {
+  margin: 0;
+}
+
+footer {
+  background-color: #000435;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="text"] {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: navy;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:disabled {
+  opacity: 0.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.pronounce {
+  background-color: red;
+}
+
+button.pause {
+  background-color: green;
+}
+
+button.clear {
+  background-color: red;
+  color: white;
+}
+
+label {
+  margin: 10px;
+  font-size: 16px;
+  color: navy;
+}
+
+input[type="range"] {
+  margin: 10px;
+  width: 200px;
+}
+
+::placeholder {
+  color: gray;
 }
